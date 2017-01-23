@@ -41,3 +41,14 @@ puts "A String".class
 # # learn.rb:38: warning: already initialized constant A_CONSTANT
 # # learn.rb:37: warning: previous definition of A_CONSTANT was here
 # # 2
+
+# files
+
+write_handler = File.new("yourSum.out", "w")
+write_handler.puts("Random Text")
+write_handler.close
+
+data_from_file = File.read("yourSum.out")
+puts "Data from file: " + data_from_file
+
+load "learn2.rb"
