@@ -64,4 +64,38 @@ else
 	puts "stay home"
 end
 
-	
+# logic
+puts "true && false = " + (true && false).to_s
+puts "true || false = " + (true || false).to_s
+puts "!false = " + (!false).to_s
+
+#comparison
+puts "5 <=> 10 = " + (5<=>10).to_s
+
+#unless
+unless age > 4
+	puts "no school"
+else
+	puts "go to school"
+end
+
+puts "You're young" if age < 40
+
+# # case statement
+# print "enter language: "
+# greeting = gets.chomp	#cuts off cr
+
+# case greeting
+# when "French", "french"
+# 	puts "Bonjour"
+# #	exit
+# when "Spanish", "spanish"
+# 	puts "Hola"
+# #	exit
+# else
+# 	puts "Hello"
+# end
+
+# puts greeting
+
+puts (age >= 50) ? "old" : "young"
