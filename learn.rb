@@ -99,3 +99,42 @@ puts "You're young" if age < 40
 # puts greeting
 
 puts (age >= 50) ? "old" : "young"
+
+#looping
+#loop do
+ x = 1
+ loop do 
+ 	x += 1
+ 	next unless (x%2) == 0	#loops unless even
+ 	puts x.to_s
+ 	break if x>=10
+ end
+
+ #while
+ y = 1
+ while y < 10
+ 	y += 1
+ 	next unless (y%2) == 0
+ 	puts y.to_s
+ end
+
+ #until
+ a = 1
+ until a>10
+ 	a+=1
+ 	next unless (a%2) == 0
+ 	puts a
+ end
+
+# for with array
+numbers = [1, 2, 3, 4, 5]
+for number in numbers
+	print "#{number}, "
+end
+puts
+
+# do with array
+groceries = ["bananas", "potatoes", "pasta"]
+groceries.each do |food|
+	puts "Get some #{food}."
+end
