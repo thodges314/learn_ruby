@@ -52,3 +52,16 @@ data_from_file = File.read("yourSum.out")
 puts "Data from file: " + data_from_file
 
 load "learn2.rb"
+
+# conditionals
+age = 12
+if(age >= 5) && (age <= 6)
+	puts "You're in kindergarten!"
+elsif (age >= 7) && (age <= 13)
+	puts "You're in grade school!"
+	puts "yeah"
+else
+	puts "stay home"
+end
+
+	
